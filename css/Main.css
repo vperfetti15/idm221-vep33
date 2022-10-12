@@ -1,0 +1,41 @@
+/*  href=”normalize.css” */
+html {
+    background-color: linear-gradient(#4F7062, #618a79, #8AAD9F, #ABC4BA, #C9D9D3, #f0f4f3);
+}
+html {
+    background-color: linear-gradient(rgba(79, 112, 98, 1), rgba(97, 138, 121, 1), rgba(138, 173, 159, 1), rgba(171, 196, 186, 1), rgba(201, 217, 211, 1), rgba(240, 244, 243, 1));
+}
+
+@font-face {
+    font-family: f;
+    src: url(); /* go to font squirrel to make cabin url*/
+}
+
+html {
+    --color-teal: rgba(79, 112, 98, 1);
+    --color-grey: rgba(78, 76, 76, 1); 
+    --color-light: rgba(255, 255, 255, 1);
+
+    --font-sans-serif: Cabin, sans-serif;
+}
+
+h1, h2, p { font-family: cabin;}
+h1 { color:rgba(255, 255, 255, 1); font-family: Cabin; font-size: 28px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 112px; }
+h2 { color:rgba(78, 76, 76, 1); font-family: Cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; }
+p { color: rgba(78, 76, 76, 1); font-family: Cabin; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 1.4; } 
+/* unsure whats happening*/
+h1 {position: absolute;
+    width: 185px;
+    height: 32px;
+    left: 157px;
+    top: 70px;}
+h2 {position: absolute;
+    width: 110px;
+    height: 32px;
+    left: 0px;
+    top: 0px;}
+p {position: absolute;
+    width: 314px;
+    height: 345px;
+    left: 0px;
+    top: 32px;}
