@@ -1,5 +1,12 @@
 html {
-    background-color: linear-gradient(rgba(79, 112, 98, 1), rgba(97, 138, 121, 1), rgba(138, 173, 159, 1), rgba(171, 196, 186, 1), rgba(201, 217, 211, 1), rgba(240, 244, 243, 1));
+background: rgb(79,112,98);
+background: -moz-linear-gradient(top,  rgba(79,112,98,1) 0%, rgba(97,138,121,1) 15%, rgba(138,173,159,1) 39%, rgba(201,217,211,1) 64%, rgba(240,244,243,1) 88%);
+background: -webkit-linear-gradient(top,  rgba(79,112,98,1) 0%,rgba(97,138,121,1) 15%,rgba(138,173,159,1) 39%,rgba(201,217,211,1) 64%,rgba(240,244,243,1) 88%);
+background: linear-gradient(to bottom,  rgba(79,112,98,1) 0%,rgba(97,138,121,1) 15%,rgba(138,173,159,1) 39%,rgba(201,217,211,1) 64%,rgba(240,244,243,1) 88%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7062', endColorstr='#f0f4f3',GradientType=0 );
+
+    background-attachment: fixed; 
+    background-size: contain;
 }
 * {
   box-sizing: border-box;
@@ -18,38 +25,67 @@ html {
     --color-teal: rgba(79, 112, 98, 1);
     --color-grey: rgba(78, 76, 76, 1); 
     --color-light: rgba(255, 255, 255, 1);
-
-    --font-sans-serif: Cabin, sans-serif;
+    --font-sans-serif: cabin, sans-serif;
 }
+
 
 h1, h2, p { font-family: cabin;}
-h1 { color:rgba(255, 255, 255, 1); font-family: Cabin; font-size: 28px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 112px; }
-h2 { color:rgba(78, 76, 76, 1); font-family: Cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; }
-p { color: rgba(78, 76, 76, 1); font-family: Cabin; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 1.4; } 
-/* unsure whats happening*/
-h1 {position: absolute;
-    width: 185px;
-    height: 32px;
-    left: 157px;
-    top: 70px;}
-h2 {position: absolute;
-    width: 110px;
-    height: 32px;
-    left: 0px;
-    top: 0px;
-}
-p {position: absolute;
-    width: 314px;
-    height: 345px;
-    left: 0px;
-    top: 32px;}
+h1 { color:rgba(255, 255, 255, 1); font-family: cabin; font-size: 28px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 112px; }
+h2 { color:rgba(78, 76, 76, 1); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; }
+p { color: rgba(78, 76, 76, 1); font-family: cabin; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 1.4; } 
+
 
 body{
     padding-bottom: 6rem;
-
 }
 
-img {
+header.img {
     height: auto;
     width: 100%;
+    flex-direction: column
 }
+.header {
+    flex-direction: column
+  }
+
+    .navigation ul{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        
+        .navigation li {
+        color: #4E4C4C; 
+        font-size: 1rem;
+        font-weight: bold;
+       /* height: 200px; 
+        width: 200px;*/
+        text-align: center;
+
+
+
+}
+
+/* Navbar links */
+.navigation ul {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .navigation ul {
+    background-color: var(--color-grey);
+    color: var(--color-teal)
+  }
+
+    .column {
+    width: 100%;
+  }
