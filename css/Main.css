@@ -12,6 +12,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7062', end
   box-sizing: border-box;
 }
 
+ul
+{
+list-style: none;
+padding: 20px 0 0 10px;
+margin: 0;
+}
+
 div {
     margin: 0 auto;
   }
@@ -31,10 +38,11 @@ html {
 a:link { text-decoration: none; color:rgba(255, 255, 255, 1);}
 
 
-h1, h2, h3 p, ul { font-family: cabin;}
+h1, h2, h3, h4, p, ul { font-family: cabin;}
 h1 { color:var(--color-light); font-family: cabin; font-size: 28px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 50px; }
 h2 { color:var(--color-light); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; }
 h3 { color: var(--color-grey); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 0px; }
+h4 { color: var(--color-grey); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 0px; }
 p { color: var(--color-grey); font-family: cabin; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 1.4; } 
 ul { color:rgba(255, 255, 255, 1); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; }
 
@@ -61,8 +69,9 @@ margin: auto;
 .logo{
   max-width: fit-content;
   margin: auto;
-  text-align: center;
   flex: auto;
+  padding: 0 0 20px 0;
+  text-align: center;
 }
 
 .nav {
@@ -98,4 +107,12 @@ img{
   flex: auto;
   text-align: center;
   max-width: fit-content;
+}
+
+h4{
+  padding: 30px 0 0 0;
+}
+
+.contact {
+  padding: 0 0 30px 0;
 }
