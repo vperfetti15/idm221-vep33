@@ -12,11 +12,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7062', end
   box-sizing: border-box;
 }
 
-ul
-{
+ul {
 list-style: none;
-padding: 20px 0 0 10px;
+padding: 20px 0 10px 0;
 margin: 0;
+}
+
+li{
+border: 1.5px solid var(--color-light);
+margin: 10px 40px 10px;
 }
 
 div {
@@ -36,15 +40,16 @@ html {
 }
 
 a:link { text-decoration: none; color:rgba(255, 255, 255, 1);}
-
+a:visited { color: var(--color-light);}
+a:hover { color: var(--color-grey);}
 
 h1, h2, h3, h4, p, ul { font-family: cabin;}
-h1 { color:var(--color-light); font-family: cabin; font-size: 28px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 50px; }
-h2 { color:var(--color-light); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; }
+h1 { color:var(--color-light); font-family: cabin; font-size: 32px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 50px; }
+h2 { color:var(--color-grey); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; }
 h3 { color: var(--color-grey); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 0px; }
 h4 { color: var(--color-grey); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 0px; }
 p { color: var(--color-grey); font-family: cabin; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 1.4; } 
-ul { color:rgba(255, 255, 255, 1); font-family: cabin; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; }
+ul { color: var(--color-light); font-family: cabin; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 32px; }
 
 body{
     flex-direction: column;
@@ -64,6 +69,10 @@ padding: 0 30px;
 flex-direction: column;
 text-align: center;
 margin: auto;
+}
+
+.bio {
+text-align:justify;
 }
 
 .logo{
@@ -110,7 +119,12 @@ img{
 }
 
 h4{
-  padding: 30px 0 0 0;
+  padding: 50px 0 20px 0;
+  margin: 0;
+}
+
+.about{
+  padding: 20px 0 0 0;
 }
 
 .contact {
