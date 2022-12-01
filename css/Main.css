@@ -8,6 +8,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7062', end
     background-attachment: fixed; 
     background-size: contain;
 }
+
 * {
   box-sizing: border-box;
 }
